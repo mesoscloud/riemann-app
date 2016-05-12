@@ -1,0 +1,24 @@
+{
+    "id": "/riemann-app",
+
+    "mem": 1024.0,
+
+    "container": {
+        "type": "DOCKER",
+        "docker": {
+            "image": "mesoscloud/riemann-app",
+
+            "network": "BRIDGE",
+
+            "portMappings": [
+                { "containerPort": 5555, "servicePort": 5555 },
+                { "containerPort": 5556, "servicePort": 5556 }
+            ]
+        }
+    },
+
+    "healthChecks": [
+        { "protocol": "TCP", "portIndex": 0 },
+        { "protocol": "TCP", "portIndex": 1 }
+    ]
+}
