@@ -1,7 +1,7 @@
 {
     "id": "/riemann-app",
 
-    "mem": 1024.0,
+    "mem": 768.0,
 
     "container": {
         "type": "DOCKER",
