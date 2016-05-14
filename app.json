@@ -20,5 +20,9 @@
     "healthChecks": [
         { "protocol": "TCP", "portIndex": 0 },
         { "protocol": "TCP", "portIndex": 1 }
-    ]
+    ],
+
+    "labels": {
+        "network": "private"
+    }
 }
