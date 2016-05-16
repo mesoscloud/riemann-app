@@ -23,6 +23,7 @@
     ],
 
     "labels": {
+        "mode": "tcp",
         "network": "private"
     }
 }
